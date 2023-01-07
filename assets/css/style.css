@@ -1,0 +1,152 @@
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../font/Lato-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0px;
+    font-family: Lato-Regular;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
+.d1_body{
+    background-color: gainsboro;
+}
+
+/* d1_header */
+header{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.d1_header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.d1_logo{
+    padding: 5px;
+}
+
+.d1_logo > img{
+    width: 200px;
+    height: 200px;
+    border: 1px groove orangered;
+    border-radius: 5%;
+    padding: 20px;
+    /* background-color: white; */
+}
+
+.d1_header_info{
+    margin: 100px 25px 0px 25px;
+}
+
+.d1_header_map{
+    width: 100%;
+    display: flex;
+}
+
+.d1_header_map span{
+    font-size: 20px;
+    color: orangered;
+    font-weight: bold;
+}
+
+.d1_like, .d1_view, .d1_subscriber{
+    padding: 5px 40px 0px 0px;
+}
+
+/* d1_video */
+.d1_video{
+    margin-bottom: 10px;
+}
+
+.d1_video_link{
+    /* border: 1px solid orangered; */
+    border-radius: 5px;
+    margin: 0px;
+    padding: 10px;
+}
+
+.card{
+    margin-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+.d1_video_view{
+    width: 50%;
+    float: left;
+}
+
+.d1_video_comment{
+    width: 50%;
+    float: left;
+    text-align: end;
+}
+
+
+/* Media Query For Small Device */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .d1_col_sm-2{
+        width: 50%;
+    }
+    
+    .d1_col_sm-3{
+        width: 33%;
+        text-align: center;
+    }
+
+    .d1_col_sm-12{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Media Query for extra small Device */
+@media only screen and (max-width: 575px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .d1_header{
+        width: 100%;
+        display: inline-block;
+    }
+
+    .d1_logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .d1_header_info{
+        margin: 0px;
+        text-align: center;
+    }
+
+    .d1_header_map{
+        width: 100%;
+        justify-content: center;
+        margin-left: 15px;
+    }
+}
